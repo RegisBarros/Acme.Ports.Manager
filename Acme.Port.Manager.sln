@@ -4,6 +4,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Acme.Ports.Manager.Core", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Acme.Ports.Manager.Tests", "src\Acme.Ports.Manager.Tests\Acme.Ports.Manager.Tests.csproj", "{C15B869C-B176-4BEE-86A9-6B0E60272EFE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Acme.Ports.Manager.Infrastructure", "src\Acme.Ports.Manager.Infrastructure\Acme.Ports.Manager.Infrastructure.csproj", "{F2724B3D-245E-496B-AF35-2354CFEF614F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{C15B869C-B176-4BEE-86A9-6B0E60272EFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C15B869C-B176-4BEE-86A9-6B0E60272EFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C15B869C-B176-4BEE-86A9-6B0E60272EFE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2724B3D-245E-496B-AF35-2354CFEF614F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2724B3D-245E-496B-AF35-2354CFEF614F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2724B3D-245E-496B-AF35-2354CFEF614F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2724B3D-245E-496B-AF35-2354CFEF614F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
