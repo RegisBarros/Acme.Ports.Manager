@@ -24,6 +24,7 @@ namespace Acme.Ports.Manager.Infrastructure.Data
                 property.SetColumnType("varchar(100)");
 
             modelBuilder.ApplyConfiguration(new PortMap());
+            modelBuilder.ApplyConfiguration(new ShipMap());
             
             base.OnModelCreating(modelBuilder);
         }
