@@ -1,15 +1,16 @@
+using System.Threading;
 using System.Threading.Tasks;
 using Acme.Ports.Manager.Core.Commands.Ports;
 using Acme.Ports.Manager.Core.Dtos;
 using Acme.Ports.Manager.Core.Models;
 using Acme.Ports.Manager.Core.Repositories;
-using Acme.Ports.Manager.Core.UseCases.Interfaces;
+using MediatR;
 using static System.Threading.Tasks.Task;
 using static Acme.Ports.Manager.Core.Mappers.PortMapper;
 
 namespace Acme.Ports.Manager.Core.UseCases
 {
-    public class CreatePortUseCase : ICreatePortUseCase
+    public class CreatePortUseCase : IRequestHandler<CreatePortCommand, PortDto>
     {
         private readonly IPortRepository _portRepository;
 
@@ -18,7 +19,7 @@ namespace Acme.Ports.Manager.Core.UseCases
             _portRepository = portRepository;
         }
 
-        public async Task<PortDto> Create(CreatePortCommand command)
+        public async Task<PortDto> Handle(CreatePortCommand command, CancellationToken cancellationToken)
         {
             var port = Port.Create(command.Name);
 

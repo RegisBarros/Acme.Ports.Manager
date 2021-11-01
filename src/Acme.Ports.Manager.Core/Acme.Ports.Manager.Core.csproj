@@ -4,4 +4,21 @@
         <TargetFramework>net5.0</TargetFramework>
     </PropertyGroup>
 
+    <ItemGroup>
+      <PackageReference Include="MediatR" Version="9.0.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Remove="UseCases\Interfaces\ICreatePortUseCase.cs" />
+      <Compile Remove="UseCases\Interfaces\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Remove="UseCases\Interfaces\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="UseCases\Interfaces\**" />
+    </ItemGroup>
+
 </Project>
