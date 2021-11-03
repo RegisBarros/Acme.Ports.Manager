@@ -7,9 +7,12 @@
 
     <ItemGroup>
       <ProjectReference Include="..\Acme.Ports.Manager.Core\Acme.Ports.Manager.Core.csproj" />
+      <ProjectReference Include="..\Acme.PortsManager.Infrastructure.IoC\Acme.PortsManager.Infrastructure.IoC.csproj" />
     </ItemGroup>
 
     <ItemGroup>
+      <PackageReference Include="Autofac" Version="6.3.0" />
+      <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="7.1.0" />
       <PackageReference Include="MediatR" Version="9.0.0" />
     </ItemGroup>
 
