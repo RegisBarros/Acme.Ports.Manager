@@ -18,8 +18,8 @@ namespace Acme.Ports.Manager.Api.Controllers
         [HttpPost]
         public IActionResult Create([FromBody] CreatePortCommand command)
         {
-            var result = _mediator.Send(command);
-            return Ok(result);
+            var response = _mediator.Send(command);
+            return Ok(response.Result);
         }
     }
 }

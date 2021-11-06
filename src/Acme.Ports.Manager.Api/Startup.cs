@@ -1,3 +1,4 @@
+using System.Text.Json.Serialization;
 using Acme.Ports.Manager.Api.Configurations;
 using Acme.PortsManager.Infrastructure.IoC;
 using Autofac;
@@ -22,7 +23,8 @@ namespace Acme.Ports.Manager.Api
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddControllers();
+            services.AddControllers().AddJsonOptions(x =>
+                x.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.Preserve);;
             
             services.AddDatabaseConfiguration(Configuration);
         }

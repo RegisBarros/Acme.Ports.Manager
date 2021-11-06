@@ -1,4 +1,5 @@
 using System;
+using System.Reflection;
 using Acme.Ports.Manager.Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -13,7 +14,11 @@ namespace Acme.Ports.Manager.Api.Configurations
             if (services == null) throw new ArgumentException(nameof(services));
 
             services.AddDbContext<PortsManagerContext>(options =>
-                options.UseNpgsql(configuration.GetConnectionString("DefaultConnection")));
+                options.UseNpgsql(configuration.GetConnectionString("DefaultConnection"), npgsqlOptionsAction:
+                    sqlOptions =>
+                    {
+                        sqlOptions.MigrationsAssembly(typeof(Startup).GetTypeInfo().Assembly.GetName().Name);
+                    }));
         }
     }
 }
