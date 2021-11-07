@@ -15,10 +15,10 @@ namespace Acme.Ports.Manager.Api
         public static IHostBuilder CreateHostBuilder(string[] args) =>
             Host.CreateDefaultBuilder(args)
                 .UseServiceProviderFactory(new AutofacServiceProviderFactory())
-                .ConfigureAppConfiguration((hostingContext, config) =>
-                {
-                    config.AddJsonFile("appsettings.json", optional: true, reloadOnChange: false);
-                })
+                // .ConfigureAppConfiguration((hostingContext, config) =>
+                // {
+                //     config.AddJsonFile("appsettings.json", optional: true, reloadOnChange: false);
+                // })
                 .ConfigureWebHostDefaults(webBuilder => { webBuilder.UseStartup<Startup>(); });
     }
 }

@@ -16,7 +16,7 @@ namespace Acme.Ports.Manager.Infrastructure.Data
 
             var builder = new DbContextOptionsBuilder<PortsManagerContext>();
  
-            var connectionString = configuration.GetConnectionString("DefaultConnection");
+            var connectionString = configuration.GetConnectionString(nameof(PortsManagerContext));
  
             builder.UseNpgsql(connectionString);
  
