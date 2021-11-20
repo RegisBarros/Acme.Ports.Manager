@@ -1,14 +1,13 @@
 using System.Threading;
 using System.Threading.Tasks;
-using Acme.Ports.Manager.Core.Commands.Ports;
 using Acme.Ports.Manager.Core.Dtos;
-using Acme.Ports.Manager.Core.Models;
-using Acme.Ports.Manager.Core.Repositories;
+using Acme.Ports.Manager.Core.Ports.Commands;
+using Acme.Ports.Manager.Core.Ports.Repositories;
 using MediatR;
 using static System.Threading.Tasks.Task;
-using static Acme.Ports.Manager.Core.Mappers.PortMapper;
+using static Acme.Ports.Manager.Core.Ports.Mappers.PortMapper;
 
-namespace Acme.Ports.Manager.Core.UseCases
+namespace Acme.Ports.Manager.Core.Ports.UseCases
 {
     public class CreatePortUseCase : IRequestHandler<CreatePortCommand, PortDto>
     {

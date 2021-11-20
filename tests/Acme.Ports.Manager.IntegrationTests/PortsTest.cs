@@ -1,8 +1,8 @@
 using System.Net;
 using System.Net.Http.Json;
 using System.Threading.Tasks;
-using Acme.Ports.Manager.Core.Commands.Ports;
 using Acme.Ports.Manager.Core.Dtos;
+using Acme.Ports.Manager.Core.Ports.Commands;
 using FluentAssertions;
 using Xunit;
 

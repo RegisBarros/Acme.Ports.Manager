@@ -1,7 +1,6 @@
 using Acme.Ports.Manager.Core.Dtos;
-using Acme.Ports.Manager.Core.Models;
 
-namespace Acme.Ports.Manager.Core.Mappers
+namespace Acme.Ports.Manager.Core.Ports.Mappers
 {
     public static class PortMapper
     {

@@ -1,4 +1,4 @@
-using Acme.Ports.Manager.Core.Models;
+using Acme.Ports.Manager.Core.Ports;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 

@@ -1,10 +1,10 @@
 using System.Threading;
 using System.Threading.Tasks;
-using Acme.Ports.Manager.Core.Commands.Ports;
 using Acme.Ports.Manager.Core.Dtos;
-using Acme.Ports.Manager.Core.Models;
-using Acme.Ports.Manager.Core.Repositories;
-using Acme.Ports.Manager.Core.UseCases;
+using Acme.Ports.Manager.Core.Ports;
+using Acme.Ports.Manager.Core.Ports.Commands;
+using Acme.Ports.Manager.Core.Ports.Repositories;
+using Acme.Ports.Manager.Core.Ports.UseCases;
 using Moq;
 using Xunit;
 

@@ -1,5 +1,6 @@
 using System.Linq;
-using Acme.Ports.Manager.Core.Models;
+using Acme.Ports.Manager.Core.Ports;
+using Acme.Ports.Manager.Core.Ships;
 using Acme.Ports.Manager.Infrastructure.Data.Mappings;
 using Microsoft.EntityFrameworkCore;
 

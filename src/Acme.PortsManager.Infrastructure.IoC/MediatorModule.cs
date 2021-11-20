@@ -1,5 +1,5 @@
 using System.Reflection;
-using Acme.Ports.Manager.Core.Commands.Ports;
+using Acme.Ports.Manager.Core.Ports.Commands;
 using Autofac;
 using MediatR;
 

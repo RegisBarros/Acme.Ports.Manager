@@ -1,6 +1,7 @@
 using System;
+using Acme.Ports.Manager.Core.Ports;
 
-namespace Acme.Ports.Manager.Core.Models
+namespace Acme.Ports.Manager.Core.Ships
 {
     public class Ship : Entity
     {

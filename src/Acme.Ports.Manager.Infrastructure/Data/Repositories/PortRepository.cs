@@ -1,6 +1,6 @@
 using System.Threading.Tasks;
-using Acme.Ports.Manager.Core.Models;
-using Acme.Ports.Manager.Core.Repositories;
+using Acme.Ports.Manager.Core.Ports;
+using Acme.Ports.Manager.Core.Ports.Repositories;
 
 namespace Acme.Ports.Manager.Infrastructure.Data.Repositories
 {

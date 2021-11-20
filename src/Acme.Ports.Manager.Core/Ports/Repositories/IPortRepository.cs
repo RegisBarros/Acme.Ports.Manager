@@ -1,7 +1,6 @@
 using System.Threading.Tasks;
-using Acme.Ports.Manager.Core.Models;
 
-namespace Acme.Ports.Manager.Core.Repositories
+namespace Acme.Ports.Manager.Core.Ports.Repositories
 {
     public interface IPortRepository
     {

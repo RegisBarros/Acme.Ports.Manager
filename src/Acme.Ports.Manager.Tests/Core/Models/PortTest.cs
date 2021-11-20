@@ -1,4 +1,5 @@
-using Acme.Ports.Manager.Core.Models;
+using Acme.Ports.Manager.Core.Ports;
+using Acme.Ports.Manager.Core.Ships;
 using Xunit;
 
 namespace Acme.Ports.Manager.Tests.Core.Models

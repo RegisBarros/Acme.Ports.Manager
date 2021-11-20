@@ -1,6 +1,6 @@
 using System;
 
-namespace Acme.Ports.Manager.Core.Models
+namespace Acme.Ports.Manager.Core
 {
     public abstract class Entity
     {

@@ -1,4 +1,4 @@
-using Acme.Ports.Manager.Core.Commands.Ports;
+using Acme.Ports.Manager.Core.Ports.Commands;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 

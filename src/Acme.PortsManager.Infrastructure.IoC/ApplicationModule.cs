@@ -1,4 +1,4 @@
-﻿using Acme.Ports.Manager.Core.Repositories;
+﻿using Acme.Ports.Manager.Core.Ports.Repositories;
 using Acme.Ports.Manager.Core.Services.Interfaces;
 using Acme.Ports.Manager.Infrastructure;
 using Acme.Ports.Manager.Infrastructure.Data;
