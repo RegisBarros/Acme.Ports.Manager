@@ -1,6 +1,9 @@
-using System.Reflection;
+﻿using System.Reflection;
+using Acme.Ports.Manager.Core.Ports.Behaviors;
 using Acme.Ports.Manager.Core.Ports.Commands;
+using Acme.Ports.Manager.Core.Ports.Validations;
 using Autofac;
+using FluentValidation;
 using MediatR;
 
 namespace Acme.PortsManager.Infrastructure.IoC
@@ -20,6 +23,12 @@ namespace Acme.PortsManager.Infrastructure.IoC
                 var componentContext = context.Resolve<IComponentContext>();
                 return t => componentContext.TryResolve(t, out var o) ? o : null;
             });
+
+            builder.RegisterAssemblyTypes(typeof(CreatePortCommandValidator).GetTypeInfo().Assembly)
+                .Where(t => t.IsClosedTypeOf(typeof(IValidator<>)))
+                .AsImplementedInterfaces();
+
+            builder.RegisterGeneric(typeof(ValidatorBehavior<,>)).As(typeof(IPipelineBehavior<,>));
         }
     }
 }

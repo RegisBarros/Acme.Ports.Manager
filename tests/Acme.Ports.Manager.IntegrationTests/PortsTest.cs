@@ -1,4 +1,4 @@
-using System.Net;
+﻿using System.Net;
 using System.Net.Http.Json;
 using System.Threading.Tasks;
 using Acme.Ports.Manager.Core.Dtos;
@@ -35,6 +35,20 @@ namespace Acme.Ports.Manager.IntegrationTests
             
             response.StatusCode.Should().Be(HttpStatusCode.OK);
             bodyContent.Should().Be("Success");
+        }
+
+
+        [Fact]
+        public async Task ShouldFailWhenRequestIsInvalid()
+        {
+            // Arrange
+            var command = new CreatePortCommand();
+
+            // Act 
+            var response = await Client.PostAsJsonAsync("v1/ports", command);
+
+            // Assert
+            response.StatusCode.Should().Be(HttpStatusCode.BadRequest);
         }
     }
 }

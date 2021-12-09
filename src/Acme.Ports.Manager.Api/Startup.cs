@@ -1,5 +1,6 @@
-using System.Text.Json.Serialization;
+﻿using System.Text.Json.Serialization;
 using Acme.Ports.Manager.Api.Configurations;
+using Acme.Ports.Manager.Api.Extensions;
 using Acme.PortsManager.Infrastructure.IoC;
 using Autofac;
 using Microsoft.AspNetCore.Builder;
@@ -36,6 +37,8 @@ namespace Acme.Ports.Manager.Api
             {
                 app.UseDeveloperExceptionPage();
             }
+
+            app.UseFluentValidationExceptionHandler();
 
             app.UseRouting();
 

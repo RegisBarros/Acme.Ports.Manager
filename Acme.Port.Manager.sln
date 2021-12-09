@@ -1,16 +1,23 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Acme.Ports.Manager.Core", "src\Acme.Ports.Manager.Core\Acme.Ports.Manager.Core.csproj", "{4ACA402A-6A5D-47AE-9173-7EC3CF7D5B35}"
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31919.166
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Acme.Ports.Manager.Core", "src\Acme.Ports.Manager.Core\Acme.Ports.Manager.Core.csproj", "{4ACA402A-6A5D-47AE-9173-7EC3CF7D5B35}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Acme.Ports.Manager.Tests", "src\Acme.Ports.Manager.Tests\Acme.Ports.Manager.Tests.csproj", "{C15B869C-B176-4BEE-86A9-6B0E60272EFE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Acme.Ports.Manager.Tests", "src\Acme.Ports.Manager.Tests\Acme.Ports.Manager.Tests.csproj", "{C15B869C-B176-4BEE-86A9-6B0E60272EFE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Acme.Ports.Manager.Infrastructure", "src\Acme.Ports.Manager.Infrastructure\Acme.Ports.Manager.Infrastructure.csproj", "{F2724B3D-245E-496B-AF35-2354CFEF614F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Acme.Ports.Manager.Infrastructure", "src\Acme.Ports.Manager.Infrastructure\Acme.Ports.Manager.Infrastructure.csproj", "{F2724B3D-245E-496B-AF35-2354CFEF614F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Acme.Ports.Manager.Api", "src\Acme.Ports.Manager.Api\Acme.Ports.Manager.Api.csproj", "{C3F80F1D-08A9-4DF8-A612-9C627D31F8C3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Acme.Ports.Manager.Api", "src\Acme.Ports.Manager.Api\Acme.Ports.Manager.Api.csproj", "{C3F80F1D-08A9-4DF8-A612-9C627D31F8C3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Acme.PortsManager.Infrastructure.IoC", "src\Acme.PortsManager.Infrastructure.IoC\Acme.PortsManager.Infrastructure.IoC.csproj", "{B62AD605-2070-417B-B84F-4EB50C61925C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Acme.PortsManager.Infrastructure.IoC", "src\Acme.PortsManager.Infrastructure.IoC\Acme.PortsManager.Infrastructure.IoC.csproj", "{B62AD605-2070-417B-B84F-4EB50C61925C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Acme.Ports.Manager.IntegrationTests", "tests\Acme.Ports.Manager.IntegrationTests\Acme.Ports.Manager.IntegrationTests.csproj", "{497BE6CD-BD86-4327-BB5F-9594B0BE2EDB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Acme.Ports.Manager.IntegrationTests", "tests\Acme.Ports.Manager.IntegrationTests\Acme.Ports.Manager.IntegrationTests.csproj", "{497BE6CD-BD86-4327-BB5F-9594B0BE2EDB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{705D9796-B249-4195-BDC4-543936DF2E51}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{B5FF8AFA-3798-4765-86D7-5F260283F7B1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -30,10 +37,6 @@ Global
 		{F2724B3D-245E-496B-AF35-2354CFEF614F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F2724B3D-245E-496B-AF35-2354CFEF614F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F2724B3D-245E-496B-AF35-2354CFEF614F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5D687757-F55F-4F3D-8FE3-84D6370F01A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5D687757-F55F-4F3D-8FE3-84D6370F01A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5D687757-F55F-4F3D-8FE3-84D6370F01A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5D687757-F55F-4F3D-8FE3-84D6370F01A0}.Release|Any CPU.Build.0 = Release|Any CPU
 		{C3F80F1D-08A9-4DF8-A612-9C627D31F8C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{C3F80F1D-08A9-4DF8-A612-9C627D31F8C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C3F80F1D-08A9-4DF8-A612-9C627D31F8C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -46,5 +49,19 @@ Global
 		{497BE6CD-BD86-4327-BB5F-9594B0BE2EDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{497BE6CD-BD86-4327-BB5F-9594B0BE2EDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{497BE6CD-BD86-4327-BB5F-9594B0BE2EDB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4ACA402A-6A5D-47AE-9173-7EC3CF7D5B35} = {705D9796-B249-4195-BDC4-543936DF2E51}
+		{C15B869C-B176-4BEE-86A9-6B0E60272EFE} = {B5FF8AFA-3798-4765-86D7-5F260283F7B1}
+		{F2724B3D-245E-496B-AF35-2354CFEF614F} = {705D9796-B249-4195-BDC4-543936DF2E51}
+		{C3F80F1D-08A9-4DF8-A612-9C627D31F8C3} = {705D9796-B249-4195-BDC4-543936DF2E51}
+		{B62AD605-2070-417B-B84F-4EB50C61925C} = {705D9796-B249-4195-BDC4-543936DF2E51}
+		{497BE6CD-BD86-4327-BB5F-9594B0BE2EDB} = {B5FF8AFA-3798-4765-86D7-5F260283F7B1}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B59E3040-D950-4C60-9777-007A1F96E459}
 	EndGlobalSection
 EndGlobal
